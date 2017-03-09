@@ -9,7 +9,21 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+<script>
+	function change(obj){
+			obj.style.color = 'green';
+	    	obj.style.borderColor = 'green';
+    
+	}
+    	
+   	function change2(obj){
+			obj.style.color = 'green';
+	    	obj.style.borderColor = 'green';
+  
+	}
+	
 
+</script>
   </head>
   <body bgcolor="#f5f6f7">
       <article class="container">
@@ -19,7 +33,7 @@
 			</p>
         </div>
         <div class="col-md-6 col-md-offset-3">
-          <form role="form">
+          <form role="form" name="form">
             <div class="form-group">
               <input type="email" class="form-control" id="InputEmail" placeholder="아이디">
             </div>
@@ -34,14 +48,13 @@
               <input type="text" class="form-control" id="username" placeholder="이름">
             </div>
             <div class="form-group">
-            	<input type="radio" name="gender" value="남자">남자
-            	&nbsp;&nbsp;&nbsp;&nbsp;
-            	<input type="radio" name="gender" value="여자">여자
+            	<input type="button" style="width: 200pt;" name="gender" value="남자" onclick="change(this)"/>
+            	<input type="button" style="width: 200pt;" name="gender" value="여자" onclick="change2(this)"/>
             </div>
             <div class="form-group">
            	   <label for="username">생일</label>
               <input type="text"  placeholder=" 년(4자)" size="23">
-              <select name="birth" style="width:150px; height: 25px">
+              <select name="birth" style="width:150px; height: 22px">
               	<option>월</option>
               	<option>1</option>
               	<option>2</option>
@@ -56,10 +69,10 @@
               	<option>11</option>
               	<option>12</option>
               </select>
-              <input type="text"  placeholder=" 일" size="23">
+              <input type="text"  placeholder=" 일" size="22">
             </div>
               <div class="form-group">
-              <input type="text" class="form-control" id="email" placeholder="비상연락용 이메일">
+              <input type="text" class="form-control" id="email" placeholder="본인확인 이메일(선택)">
             </div>
             <div class="form-group">
               <hr>

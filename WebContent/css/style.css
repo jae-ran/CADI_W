@@ -22,3 +22,13 @@ By: dave-cheon
 .btn.active span.fa {
 	opacity: 1;
 }
+
+input[type=button] {
+	cursor: pointer;
+	background-color: white;
+	outline: 0;
+	border:1;
+	
+	
+	
+}
