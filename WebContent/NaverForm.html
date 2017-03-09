@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>네이버 회원가입 폼</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+
+  </head>
+  <body bgcolor="#f5f6f7">
+      <article class="container">
+        <div class="page-header">
+        	<p style="text-align:center;">
+	  			<img src="images/NaverLogo.png"  width="250">
+			</p>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+          <form role="form">
+            <div class="form-group">
+              <input type="email" class="form-control" id="InputEmail" placeholder="아이디">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="InputPassword1" placeholder="비밀번호">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="InputPassword2" placeholder="비밀번호  재확인">
+            </div>
+            <div class="form-group">
+            <hr>
+              <input type="text" class="form-control" id="username" placeholder="이름">
+            </div>
+            <div class="form-group">
+            	<input type="radio" name="gender" value="남자">남자
+            	&nbsp;&nbsp;&nbsp;&nbsp;
+            	<input type="radio" name="gender" value="여자">여자
+            </div>
+            <div class="form-group">
+           	   <label for="username">생일</label>
+              <input type="text"  placeholder=" 년(4자)" size="23">
+              <select name="birth" style="width:150px; height: 25px">
+              	<option>월</option>
+              	<option>1</option>
+              	<option>2</option>
+              	<option>3</option>
+              	<option>4</option>
+              	<option>5</option>
+              	<option>6</option>
+              	<option>7</option>
+              	<option>8</option>
+              	<option>9</option>
+              	<option>10</option>
+              	<option>11</option>
+              	<option>12</option>
+              </select>
+              <input type="text"  placeholder=" 일" size="23">
+            </div>
+              <div class="form-group">
+              <input type="text" class="form-control" id="email" placeholder="비상연락용 이메일">
+            </div>
+            <div class="form-group">
+              <hr>
+              	<select name="tel">
+              		<option value="82" selected>+82</option>
+              	</select>
+              <div class="input-group">
+                <input type="tel" class="form-control" id="tel" placeholder="휴대전화번호">
+                <span class="input-group-btn">
+                  <button class="btn btn-success">인증<i class="fa fa-mail-forward spaceLeft"></i></button>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="username" placeholder="인증번호">
+                <span class="input-group-btn">
+                  <button class="btn btn-success">확인<i class="fa fa-edit spaceLeft"></i></button>
+                </span>
+              </div>
+            </div>
+        
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-info">가입하기<i class="fa fa-check spaceLeft"></i></button>
+            </div>
+          </form>
+        </div>
+
+     
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
